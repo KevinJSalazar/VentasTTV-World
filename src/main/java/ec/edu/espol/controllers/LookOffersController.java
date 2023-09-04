@@ -166,6 +166,7 @@ public class LookOffersController implements Initializable {
             App.setScene(sc);
         } catch(Exception ex){}
     }
+
     
     
     

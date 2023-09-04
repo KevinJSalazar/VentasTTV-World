@@ -129,7 +129,19 @@
           </Tab>
             <Tab text="Sobre nosotros">
               <content>
-                <AnchorPane fx:id="anchorpane3" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                <AnchorPane fx:id="anchorpane3" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="143.0" fitWidth="531.0" layoutX="35.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../images/intro.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="126.0" fitWidth="426.0" layoutX="88.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../images/frase.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
               </content>
             </Tab>
         </tabs>
