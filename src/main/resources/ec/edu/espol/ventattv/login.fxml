@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="Pane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.edu.espol.controllers.LoginController">
+   <children>
+      <ImageView fitHeight="69.0" fitWidth="74.0" layoutX="117.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/forma-de-persona-llena-de-usuario.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="165.0" fitWidth="316.0" layoutX="153.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/Logo%20oficial.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="205.0" layoutY="200.0" text="Usuario: ">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="205.0" layoutY="235.0" text="Contraseña: ">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="correo" layoutX="329.0" layoutY="199.0" prefHeight="25.0" prefWidth="207.0" />
+      <Button layoutX="229.0" layoutY="304.0" mnemonicParsing="false" onMouseClicked="#login" text="Iniciar sesión">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="186.0" layoutY="359.0" onMouseClicked="#switchToRegisterNewUser" text="¿No tienes una cuenta? Regístrate aquí " underline="true">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <PasswordField fx:id="contraseña" layoutX="329.0" layoutY="233.0" prefHeight="25.0" prefWidth="207.0" />
+   </children>
+</Pane>

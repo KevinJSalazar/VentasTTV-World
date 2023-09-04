@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.edu.espol.controllers.RegisterNewVehicleController">
+   <children>
+      <TabPane prefHeight="550.0" prefWidth="498.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="Motocicleta">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane hbarPolicy="NEVER" prefHeight="390.0" prefWidth="498.0" vbarPolicy="ALWAYS">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="470.0" prefWidth="498.0">
+                                 <children>
+                                    <TextField fx:id="placa" layoutX="178.0" layoutY="69.0" prefHeight="26.0" prefWidth="139.0">
+                                       <font>
+                                          <Font name="Arial Unicode MS" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="marca" layoutX="178.0" layoutY="103.0" prefHeight="26.0" prefWidth="140.0" />
+                                    <TextField fx:id="modelo" layoutX="178.0" layoutY="137.0" prefHeight="26.0" prefWidth="295.0" />
+                                    <TextField fx:id="color" layoutX="178.0" layoutY="171.0" prefHeight="26.0" prefWidth="295.0" />
+                                    <TextField fx:id="tipodemotor" layoutX="178.0" layoutY="206.0" prefHeight="26.0" prefWidth="295.0" />
+                                    <TextField fx:id="tipodecombustible" layoutX="178.0" layoutY="241.0" prefHeight="26.0" prefWidth="295.0" />
+                                    <TextField fx:id="precio" layoutX="36.0" layoutY="287.0" prefHeight="26.0" prefWidth="104.0" />
+                                    <TextField fx:id="año" layoutX="200.0" layoutY="287.0" prefHeight="26.0" prefWidth="104.0" />
+                                    <TextField fx:id="recorrido" layoutX="368.0" layoutY="287.0" prefHeight="26.0" prefWidth="104.0" />
+                                    <Button layoutX="211.0" layoutY="370.0" mnemonicParsing="false" onMouseClicked="#registrarMoto" text="Registrar">
+                                       <font>
+                                          <Font name="Arial Unicode MS" size="15.0" />
+                                       </font>
+                                    </Button>
+                                    <Label layoutX="17.0" layoutY="72.0" text="Placa: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="105.0" text="Marca: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="139.0" text="Modelo: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="16.0" layoutY="173.0" text="Color: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="14.0" layoutY="208.0" text="Tipo de motor: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="14.0" layoutY="243.0" text="Tipo de combustible: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="63.0" layoutY="324.0" text="Precio ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="238.0" layoutY="324.0" text="Año">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="386.0" layoutY="324.0" text="Recorrido ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fx:id="ivFile" fitHeight="95.0" fitWidth="147.0" layoutX="326.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fitHeight="86.0" fitWidth="158.0" layoutX="7.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../images/regístralo.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button layoutX="179.0" layoutY="32.0" mnemonicParsing="false" onAction="#handleImageFile" prefHeight="26.0" prefWidth="138.0" text="Seleccionar imagen">
+                                       <font>
+                                          <Font name="Arial Unicode MS" size="13.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+          <Tab text="Automóvil">
+            <content>
+              <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="498.0">
+                     <children>
+                        <ScrollPane hbarPolicy="NEVER" layoutX="-1.0" layoutY="-2.0" pannable="true" prefHeight="390.0" prefWidth="498.0" vbarPolicy="ALWAYS">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="521.0" prefWidth="498.0">
+                                 <children>
+                                    <TextField fx:id="placaA" layoutX="178.0" layoutY="67.0" prefHeight="26.0" prefWidth="138.0">
+                                       <font>
+                                          <Font name="Arial Unicode MS" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="marcaA" layoutX="178.0" layoutY="101.0" prefHeight="26.0" prefWidth="138.0" />
+                                    <TextField fx:id="modeloA" layoutX="178.0" layoutY="135.0" prefHeight="26.0" prefWidth="295.0" />
+                                    <TextField fx:id="colorA" layoutX="178.0" layoutY="169.0" prefHeight="26.0" prefWidth="295.0" />
+                                    <TextField fx:id="tipodemotorA" layoutX="178.0" layoutY="204.0" prefHeight="26.0" prefWidth="295.0" />
+                                    <TextField fx:id="tipodecombustibleA" layoutX="178.0" layoutY="239.0" prefHeight="26.0" prefWidth="295.0" />
+                                    <TextField fx:id="precioA" layoutX="97.0" layoutY="322.0" prefHeight="26.0" prefWidth="104.0" />
+                                    <TextField fx:id="añoA" layoutX="304.0" layoutY="322.0" prefHeight="26.0" prefWidth="104.0" />
+                                    <TextField fx:id="recorridoA" layoutX="304.0" layoutY="386.0" prefHeight="26.0" prefWidth="104.0" />
+                                    <Button layoutX="211.0" layoutY="461.0" mnemonicParsing="false" onMouseClicked="#registrarCarro" text="Registrar">
+                                       <font>
+                                          <Font name="Arial Unicode MS" size="15.0" />
+                                       </font>
+                                    </Button>
+                                    <Label layoutX="17.0" layoutY="70.0" text="Placa: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="103.0" text="Marca: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="137.0" text="Modelo: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="16.0" layoutY="171.0" text="Color: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="14.0" layoutY="206.0" text="Tipo de motor: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="14.0" layoutY="241.0" text="Tipo de combustible: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="126.0" layoutY="355.0" text="Precio ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="342.0" layoutY="355.0" text="Año">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="322.0" layoutY="421.0" text="Recorrido ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="vidriosA" layoutX="97.0" layoutY="386.0" prefHeight="26.0" prefWidth="104.0" />
+                                    <TextField fx:id="transmisionA" layoutX="178.0" layoutY="278.0" prefHeight="26.0" prefWidth="295.0" />
+                                    <Label layoutX="125.0" layoutY="421.0" text="Vidrios">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="15.0" layoutY="280.0" text="Transmisión: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="86.0" fitWidth="158.0" layoutX="7.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../images/regístralo.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button layoutX="178.0" layoutY="34.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#handleImageFileA" prefHeight="26.0" prefWidth="138.0" text="Seleccionar imagen">
+                                       <font>
+                                          <Font name="Arial Unicode MS" size="13.0" />
+                                       </font>
+                                    </Button>
+                                    <ImageView fx:id="ivFileA" fitHeight="95.0" fitWidth="147.0" layoutX="326.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Camioneta">
+            <content>
+              <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="498.0">
+                     <children>
+                        <ScrollPane hbarPolicy="NEVER" pannable="true" prefHeight="390.0" prefWidth="498.0" vbarPolicy="ALWAYS">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="520.0" prefWidth="498.0">
+                                 <children>
+                                    <TextField fx:id="placaC" layoutX="178.0" layoutY="58.0" prefHeight="26.0" prefWidth="138.0">
+                                       <font>
+                                          <Font name="Arial Unicode MS" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="marcaC" layoutX="178.0" layoutY="92.0" prefHeight="26.0" prefWidth="138.0" />
+                                    <TextField fx:id="modeloC" layoutX="178.0" layoutY="126.0" prefHeight="26.0" prefWidth="295.0" />
+                                    <TextField fx:id="colorC" layoutX="178.0" layoutY="160.0" prefHeight="26.0" prefWidth="295.0" />
+                                    <TextField fx:id="tipodemotorC" layoutX="178.0" layoutY="195.0" prefHeight="26.0" prefWidth="295.0" />
+                                    <TextField fx:id="tipodecombustibleC" layoutX="178.0" layoutY="230.0" prefHeight="26.0" prefWidth="295.0" />
+                                    <TextField fx:id="precioC" layoutX="94.0" layoutY="345.0" prefHeight="26.0" prefWidth="104.0" />
+                                    <TextField fx:id="añoC" layoutX="301.0" layoutY="345.0" prefHeight="26.0" prefWidth="104.0" />
+                                    <TextField fx:id="recorridoC" layoutX="301.0" layoutY="409.0" prefHeight="26.0" prefWidth="104.0" />
+                                    <Button layoutX="208.0" layoutY="474.0" mnemonicParsing="false" onMouseClicked="#registrarCamioneta" text="Registrar">
+                                       <font>
+                                          <Font name="Arial Unicode MS" size="15.0" />
+                                       </font>
+                                    </Button>
+                                    <Label layoutX="17.0" layoutY="61.0" text="Placa: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="94.0" text="Marca: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="128.0" text="Modelo: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="16.0" layoutY="162.0" text="Color: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="14.0" layoutY="197.0" text="Tipo de motor: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="14.0" layoutY="232.0" text="Tipo de combustible: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="123.0" layoutY="378.0" text="Precio ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="339.0" layoutY="378.0" text="Año">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="319.0" layoutY="444.0" text="Recorrido ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="vidriosC" layoutX="94.0" layoutY="409.0" prefHeight="26.0" prefWidth="104.0" />
+                                    <TextField fx:id="transmisionC" layoutX="178.0" layoutY="269.0" prefHeight="26.0" prefWidth="295.0" />
+                                    <Label layoutX="122.0" layoutY="444.0" text="Vidrios">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="15.0" layoutY="271.0" text="Transmisión: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="tracciónC" layoutX="178.0" layoutY="308.0" prefHeight="26.0" prefWidth="295.0" />
+                                    <Label layoutX="15.0" layoutY="310.0" text="Tracción: ">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="86.0" fitWidth="158.0" layoutX="8.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../images/regístralo.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="ivFileC" fitHeight="95.0" fitWidth="147.0" layoutX="326.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Button layoutX="178.0" layoutY="24.0" mnemonicParsing="false" onMouseClicked="#handleImageFileC" prefHeight="26.0" prefWidth="138.0" text="Seleccionar imagen">
+                                       <font>
+                                          <Font name="Arial Unicode MS" size="13.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button layoutX="512.0" layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#switchToMenuPrincipal" prefHeight="26.0" prefWidth="75.0" text="🢀">
+         <font>
+            <Font name="Arial Unicode MS" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
