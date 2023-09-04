@@ -146,7 +146,7 @@ public class LookOffersController implements Initializable {
                     Oferta.saveListOfertaSer(ofertas);
                     Usuario.saveListUsuariosSer(usuariosArchivo);
                     String cuerpo = "El propietario del vehículo:\n" + v.getMarca() + " " + v.getModelo() + " - Placa: " + v.getPlaca() + " - Recorrido: " + v.getRecorrido() + " - Año: " + v.getAño() + "\nHa aceptado tu oferta de: " + valorSeleccionado;
-                    Utilitaria.sendMensaje(usuario.getCorreo(), "¡Una de sus ofertas ha sido aceptada!", cuerpo + "\nCorreo del propietario: " + correoSeleccionado);
+                    Utilitaria.sendMensaje(correoSeleccionado, "¡Una de sus ofertas ha sido aceptada!", cuerpo + "\nCorreo del propietario: " + usuario.getCorreo());
                 }
                 
             });
