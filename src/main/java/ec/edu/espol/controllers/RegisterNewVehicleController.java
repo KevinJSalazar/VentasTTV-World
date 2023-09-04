@@ -345,7 +345,7 @@ public class RegisterNewVehicleController implements Initializable {
     private void guardarImagen(File imagen, String n) throws IOException{
         String nuevoNombre = n+".png";
         if(imagen != null){
-            String rutaProyecto = System.getProperty("user.dir")+"\\src\\main\\resources";
+            String rutaProyecto = System.getProperty("user.dir")+File.separator+"src"+File.separator+"main"+File.separator+"resources";
             String rutaCarpetaDestino = rutaProyecto + File.separator + "imagenesVehiculos";
             File destinoCarpeta = new File(rutaCarpetaDestino);
             if(!destinoCarpeta.exists())
